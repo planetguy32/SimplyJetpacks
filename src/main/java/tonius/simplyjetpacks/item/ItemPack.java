@@ -13,6 +13,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -194,7 +195,7 @@ public class ItemPack<T extends PackBase> extends ItemArmor implements IControll
                 return icon;
             }
         }
-        return super.getIcon(stack, pass);
+        return Items.golden_chestplate.getIcon(stack, 0);
     }
     
     @Override
